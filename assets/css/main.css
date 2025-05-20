@@ -1004,19 +1004,19 @@
 	    }
 	
 	    .carousel-button img {
-	        width: 5px;  
-	        height: 5px; 
+	        width: 15px;  
+	        height: 15px; 
 	        display: block; 
 	        margin: auto; 
 	        vertical-align: middle; 
 	    }
 	
 	    .carousel-button.prev {
-	        left: 5px; 
+	        left: 15px; 
 	    }
 	
 	    .carousel-button.next {
-	        right: 5px; 
+	        right: 15px; 
 	    }
 			
 	    .filtro-ricerca {
@@ -1087,8 +1087,8 @@
 	
 	    #poster img {
 	        height: auto; 
-	        max-width: 100%; 
-	        margin: 1rem 0; 
+	        max-width: 80%; 
+	        margin: 1rem 1rem; 
 	    }
 	
 	    #poster {
@@ -1111,10 +1111,6 @@
 		text-align:justify;
 		margin-left:1rem;
 		margin-right:1rem;
-	}
-	
-	.descrizione img{
-		height: 60%;
 	}
 
 	#poster{
