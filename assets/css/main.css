@@ -988,8 +988,37 @@
 	}
 
 	@media screen and (max-width: 480px) {
-		   /**/
-
+		/**/
+	    .carousel-button {
+	        position: absolute;
+	        top: 50%; /* Vertically center */
+	        transform: translateY(-50%);
+	        border: none;
+	        cursor: pointer;
+	        background-color: rgba(255, 255, 255, 0.5); /* Optional: semi-transparent background for visibility */
+	        padding: 0; /* Remove default padding */
+	        width: 30px;  /* Desired width for the square button */
+	        height: 30px; /* Desired height for the square button */
+	        z-index: 10; /* Ensure buttons are above images */
+	        border-radius: 3px; /* Optional: slightly rounded corners */
+	    }
+	
+	    .carousel-button img {
+	        width: 15px;  /* Smaller image size */
+	        height: 15px; /* Smaller image size */
+	        display: block; /* Helps with centering */
+	        margin: auto; /* Center image inside the button */
+	        vertical-align: middle; /* This might not be needed with display:block and margin:auto */
+	    }
+	
+	    .carousel-button.prev {
+	        left: 5px; /* Position on the far left with a small gap */
+	    }
+	
+	    .carousel-button.next {
+	        right: 5px; /* Position on the far right with a small gap */
+	    }
+			
 	    .filtro-ricerca {
 	        margin: 1rem;
 	    }
