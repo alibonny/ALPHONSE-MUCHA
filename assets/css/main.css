@@ -990,6 +990,36 @@
 	@media screen and (max-width: 480px) {
 		/**/
 
+		.carousel-button {
+	        position: absolute;
+	        top: 50%; 
+	        transform: translateY(-50%);
+	        border: none;
+	        cursor: pointer;
+	        background-color: rgba(255, 255, 255, 0.5); 
+	        padding: 0; 
+	        width: 10px; 
+	        height: 10px; 
+	        z-index: 10; 
+	        border-radius: 3px; 
+	    }
+	
+	    .carousel-button img {
+	        width: 30px;  
+	        height: 30px; 
+	        display: block; 
+	        margin: auto; 
+	        vertical-align: middle; 
+	    }
+	
+	    .carousel-button.prev {
+	        left: 15px; 
+	    }
+	
+	    .carousel-button.next {
+	        right: 15px; 
+	    }
+		
 		.filtro-ricerca{
 			margin:1rem;
 		}
