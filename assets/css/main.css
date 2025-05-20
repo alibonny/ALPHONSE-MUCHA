@@ -991,24 +991,24 @@
 		/**/
 	    .carousel-button {
 	        position: absolute;
-	        top: 50%; /* Vertically center */
+	        top: 50%; 
 	        transform: translateY(-50%);
 	        border: none;
 	        cursor: pointer;
-	        background-color: rgba(255, 255, 255, 0.5); /* Optional: semi-transparent background for visibility */
-	        padding: 0; /* Remove default padding */
-	        width: 30px;  /* Desired width for the square button */
-	        height: 30px; /* Desired height for the square button */
-	        z-index: 10; /* Ensure buttons are above images */
-	        border-radius: 3px; /* Optional: slightly rounded corners */
+	        background-color: rgba(255, 255, 255, 0.5); 
+	        padding: 0; 
+	        width: 30px; 
+	        height: 30px; 
+	        z-index: 10; 
+	        border-radius: 3px; 
 	    }
 	
 	    .carousel-button img {
-	        width: 15px;  /* Smaller image size */
-	        height: 15px; /* Smaller image size */
-	        display: block; /* Helps with centering */
-	        margin: auto; /* Center image inside the button */
-	        vertical-align: middle; /* This might not be needed with display:block and margin:auto */
+	        width: 15px;  
+	        height: 15px; 
+	        display: block; 
+	        margin: auto; 
+	        vertical-align: middle; 
 	    }
 	
 	    .carousel-button.prev {
@@ -1035,7 +1035,7 @@
 	    .carousel {
 	        position: relative;
 	        width: 100%; 
-	        overflow: hidden; /* Ensures content outside 100vw is clipped */
+	        overflow: hidden; 
 	        height: 100%;
 	        display: flex;
 	        flex-direction: column;
@@ -1045,39 +1045,38 @@
 	        display: flex;
 	        flex-direction: row;
 	        transition: transform 0.5s ease-in-out;
-	        /* justify-content: flex-start; /* This is fine */
-	        /* align-items: center; /* This is fine */
+	        justify-content: flex-start; 
+	        align-items: center; 
 	    }
 	
 	    .carousel-track2 {
 	        display: flex;
 	        flex-direction: row;
 	        transition: transform 0.5s ease-in-out;
-	        /* justify-content: flex-start; /* This is fine */
-	        /* align-items: center; /* This is fine */
+	        justify-content: flex-start; 
+	        align-items: center;
 	    }
 	
 	    .carousel-item,
 	    .carousel-item2,
 	    .carousel-item3,
 	    .carousel-item-seasons {
-	        width: 100vw; /* Makes the item take the full viewport width */
-	        margin-left: 0; /* Set margin to 0 to prevent overflow issues */
-	        margin-right: 0; /* Ensure no horizontal margins */
+	        width: 100vw; 
+	        margin-left: 0; 
+	        margin-right: 0; 
 	        flex-shrink: 0;
 	        display: flex;
 	        flex-direction: column;
 	        align-items: center;
-	        box-sizing: border-box; /* Important if you add padding inside the item */
+	        box-sizing: border-box; 
 	    }
 	    
-	    /* If your images inside .carousel-item (etc.) aren't already 100% width of the item: */
 	    .carousel-item img,
 	    .carousel-item2 img,
 	    .carousel-item3 img,
 	    .carousel-item-seasons img {
-	        width: 100%; /* Make images fill the item width */
-	        height: auto; /* Maintain aspect ratio */
+	        width: 100%; 
+	        height: auto; 
 	        display: block;
 	    }
 	
@@ -1095,7 +1094,6 @@
 	        flex-direction: column; 
 	        align-items: center;    
 	        padding: 2%;
-	        /* width: 50%; /* Consider if this is needed, might conflict with full-width poster items */
 	        box-sizing: border-box; 
 	    }
 	
