@@ -988,140 +988,116 @@
 	}
 
 	@media screen and (max-width: 480px) {
-		/**/
+		   /**/
 
-		.filtro-ricerca{
-			margin-right:1rem;
-			margin-left:1rem;
-		}
-
-		.opereUP{
-			margin-left: 1rem;
-			margin-right:1rem;
-			margin-bottom:1.5rem;
-			display:flex;
-			flex-direction:column;
-			min-height: 100vh;
-		}
-
-		.carousel{
-			position: relative;
-			width: 100%; 
-			overflow: hidden;
-			height:100%;
-			display:flex;
-			flex-direction:column;
-		}
-
-		.carousel-track {
-			display: flex;
-			flex-direction:row;
-			transition: transform 0.5s ease-in-out;
-			justify-content: flex-start; 
-			align-items: center;
-		}
-
-		.carousel-track2 {
-			display: flex;
-			flex-direction:row;
-			transition: transform 0.5s ease-in-out;
-			justify-content: flex-start; 
-			align-items: center;
-		}
-
-		.carousel-item {
-			margin-left:1rem;
-			width:50vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-		
-		.carousel-item2 {
-			margin-left:1rem;
-			width:100w;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-
-		.carousel-item3 {
-			margin-left:1rem;
-			width:100vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-
-		.carousel-item-seasons{
-			margin-left:1rem;
-			width:100vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-		
-		#mappa p img {
-			max-width: 80%; 
-		}
-
-		#poster img{
-			height: auto; 
-			max-width: 100%; 
-			margin: 1rem 0; 
-		}
-
-		#poster{
-			flex-direction: column; 
-			align-items: center;    
-			padding: 2%;
-			width: 50%; 
-       		box-sizing: border-box; 
-		}
-
-		#footer{
-			display:flex;
-			flex-direction:column;
-			justify-content:center;
-			align-items:center;
-		}
-		/**/
-		
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 112.5%;
-			min-width: 90%;
-		}
-
-		.container.\37 5\25 {
-			width: 67.5%;
-		}
-
-		.container.\35 0\25 {
-			width: 45%;
-		}
-
-		.container.\32 5\25 {
-			width: 22.5%;
-		}
-
-		.container {
-			width: 90% !important;
-		}
-
-		.carousel{
-			position: relative;
-			width: 100%; 
-			overflow: hidden;
-			height:100%;
-			
-		}
+	    .filtro-ricerca {
+	        margin: 1rem;
+	    }
 	
+	    .opereUP {
+	        margin-left: 1rem;
+	        margin-right: 1rem;
+	        margin-bottom: 1.5rem;
+	        display: flex;
+	        flex-direction: column;
+	        min-height: 100vh;
+	    }
+	
+	    .carousel {
+	        position: relative;
+	        width: 100%; 
+	        overflow: hidden; /* Ensures content outside 100vw is clipped */
+	        height: 100%;
+	        display: flex;
+	        flex-direction: column;
+	    }
+	
+	    .carousel-track {
+	        display: flex;
+	        flex-direction: row;
+	        transition: transform 0.5s ease-in-out;
+	        /* justify-content: flex-start; /* This is fine */
+	        /* align-items: center; /* This is fine */
+	    }
+	
+	    .carousel-track2 {
+	        display: flex;
+	        flex-direction: row;
+	        transition: transform 0.5s ease-in-out;
+	        /* justify-content: flex-start; /* This is fine */
+	        /* align-items: center; /* This is fine */
+	    }
+	
+	    .carousel-item,
+	    .carousel-item2,
+	    .carousel-item3,
+	    .carousel-item-seasons {
+	        width: 100vw; /* Makes the item take the full viewport width */
+	        margin-left: 0; /* Set margin to 0 to prevent overflow issues */
+	        margin-right: 0; /* Ensure no horizontal margins */
+	        flex-shrink: 0;
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+	        box-sizing: border-box; /* Important if you add padding inside the item */
+	    }
+	    
+	    /* If your images inside .carousel-item (etc.) aren't already 100% width of the item: */
+	    .carousel-item img,
+	    .carousel-item2 img,
+	    .carousel-item3 img,
+	    .carousel-item-seasons img {
+	        width: 100%; /* Make images fill the item width */
+	        height: auto; /* Maintain aspect ratio */
+	        display: block;
+	    }
+	
+	    #mappa p img {
+	        max-width: 80%; 
+	    }
+	
+	    #poster img {
+	        height: auto; 
+	        max-width: 100%; 
+	        margin: 1rem 0; 
+	    }
+	
+	    #poster {
+	        flex-direction: column; 
+	        align-items: center;    
+	        padding: 2%;
+	        /* width: 50%; /* Consider if this is needed, might conflict with full-width poster items */
+	        box-sizing: border-box; 
+	    }
+	
+	    #footer {
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	    }
+	    /**/
+		
+	.container.\31 25\25 {
+		width: 100%;
+		max-width: 112.5%;
+		min-width: 90%;
+	}
+
+	.container.\37 5\25 {
+		width: 67.5%;
+	}
+
+	.container.\35 0\25 {
+		width: 45%;
+	}
+
+	.container.\32 5\25 {
+		width: 22.5%;
+	}
+
+	.container {
+		width: 90% !important;
 	}
 
 /* GRID */
