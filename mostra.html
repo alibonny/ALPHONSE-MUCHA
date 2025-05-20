@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Mostra - ALPHONSE MUCHA</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/carosello.js"></script>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+		<!-- DublinCore -->
+		<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/>
+
+		<META name="DC.Title" content="Alphonse Mucha"/>
+		<META name="DC.Creator" content="Alice Bonora"/>
+		<META name="DC.Subject" content="Alphonse Mucha, Artista e le sue opere"/>
+		<META name="DC.Description" content="Un sito che guida attraverso la vita di Alphonse Mucha e ne presenta le opere più celebri"/>
+		<META name="DC.Publisher" content="Github Pages"/>
+		<META name="DC.Date" content="Marzo 2025"/>
+		<META name="DC.Type" content="Vita dell'artista e collezione delle due opere"/>
+		<META name="DC.Format" content="Sito web"/>
+		<META name="DC.Source" content="Alphonse Mucha"/>
+		<META name="DC.Language" content="It"/>
+	</head>
+	
+	<body class="subpage">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="#menu">Menu</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="storiaMucha.html">Storia</a></li>
+				<li><a href="opere.html">Opere</a></li>
+				<li><a href="mostra.html">Mostra</a></li>
+			</ul>
+		</nav>
+
+		<!-- One -->
+		<section id="One" class="wrapper style3">
+			<div class="inner">
+				<header class="align-center">
+					<p></p>
+					<h2>Mostra</h2>
+				</header>
+			</div>
+		</section>
+
+        <!-- Main -->
+		<div id="main" class="opereUP">
+
+			<!-- Breadcrumbs -->
+			<section class="container-fluid my-3">
+				<div class="row">
+					<div class="col-md-3">
+						<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Mostra</li>
+						</ol>
+						</nav>
+					</div>
+				</div>
+			</section>
+
+			<div class="location">
+				<!--MAPPA-->
+				<div id="map-container">
+					<div id="map"></div>
+				
+					<!-- Pannello laterale con immagine -->
+					<div id="museum-panel">
+						<span id="close-panel">&times;</span>
+						<img src="images/museo2.jpg" alt="Mucha Museum" style="width: 100%; margin-top: 2rem;">
+					</div>
+				</div>
+				<div class="descrMuseo">
+					Kaunický palác Panská 7
+					<div>110 00 Praga 1, Repubblica Ceca</div>
+					<div><a href ="https://www.mucha.cz/it/"> >> Esplora il sito del museo</a></div>
+
+				</div>
+
+			</div>
+			
+			<script>
+				// Inizializza la mappa centrata su Praga (Mucha Museum)
+				var map = L.map('map').setView([50.0875, 14.4213], 13);
+
+				// Aggiunge il layer OpenStreetMap
+				L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+				}).addTo(map);
+
+				// Aggiunge un marker sulla posizione della mostra
+				var marker = L.marker([50.0875, 14.4213]).addTo(map)
+					.bindPopup("Clicca per vedere la facciata del museo!");
+
+				// Quando si clicca sul marker, mostra il pannello laterale
+				marker.on("click", function () {
+					document.getElementById("museum-panel").style.display = "flex";
+				});
+
+				// Quando si clicca sulla "X", nasconde completamente il pannello
+				document.getElementById("close-panel").addEventListener("click", function () {
+					document.getElementById("museum-panel").style.display = "none";
+				});
+
+			</script>
+		
+		</div>
+		
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="diritti">
+				Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+				Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. 
+				Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.     
+			</div>
+			
+			<div class="container copy">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		
+			<div class="copyright">
+				<a href="#">Credits</a>
+				<a href="webProjectPlan.html">Web Project Plan</a>
+				<a href="#">Informazioni</a>
+			</div>
+		</footer>
+
+	</body>
+</html>
