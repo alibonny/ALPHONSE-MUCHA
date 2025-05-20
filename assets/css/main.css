@@ -997,26 +997,26 @@
 	        cursor: pointer;
 	        background-color: rgba(255, 255, 255, 0.5); 
 	        padding: 0; 
-	        width: 30px; 
-	        height: 30px; 
+	        width: 10px; 
+	        height: 10px; 
 	        z-index: 10; 
 	        border-radius: 3px; 
 	    }
 	
 	    .carousel-button img {
-	        width: 15px;  
-	        height: 15px; 
+	        width: 5px;  
+	        height: 5px; 
 	        display: block; 
 	        margin: auto; 
 	        vertical-align: middle; 
 	    }
 	
 	    .carousel-button.prev {
-	        left: 5px; /* Position on the far left with a small gap */
+	        left: 5px; 
 	    }
 	
 	    .carousel-button.next {
-	        right: 5px; /* Position on the far right with a small gap */
+	        right: 5px; 
 	    }
 			
 	    .filtro-ricerca {
