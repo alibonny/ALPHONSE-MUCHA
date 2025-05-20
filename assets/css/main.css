@@ -1004,8 +1004,8 @@
 	    }
 	
 	    .carousel-button img {
-	        width: 15px;  
-	        height: 15px; 
+	        width: 30px;  
+	        height: 30px; 
 	        display: block; 
 	        margin: auto; 
 	        vertical-align: middle; 
@@ -1025,8 +1025,6 @@
 	    }
 	
 	    .opereUP {
-	        margin-left: 1rem;
-	        margin-right: 1rem;
 	        margin-bottom: 1.5rem;
 	        display: flex;
 	        flex-direction: column;
@@ -1062,7 +1060,7 @@
 	    .carousel-item2,
 	    .carousel-item3,
 	    .carousel-item-seasons {
-	        width: 80vw; 
+	        width: 50vw; 
 	        margin-left: 1rem; 
 	        margin-right: 1rem; 
 	        flex-shrink: 0;
@@ -1107,17 +1105,12 @@
 	    /**/
 	    
 	/*POSTER*/
-	.descrizione{
+	   .descrizione{
 		text-align:justify;
 		margin-left:1rem;
 		margin-right:1rem;
-	}
-
-	#poster{
-		width:100vw;
-		margin:1rem;
-	}
-		
+	   }
+			
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 112.5%;
