@@ -1079,7 +1079,7 @@
 			align-items: center;    
 			padding: 2%;
 			width: 50%; 
-       		box-sizing: border-box; 
+       			box-sizing: border-box; 
 		}
 
 		#footer{
@@ -1113,6 +1113,7 @@
 			width: 90% !important;
 		}
 
+		
 		.carousel{
 			position: relative;
 			width: 100%; 
@@ -1120,34 +1121,7 @@
 			height:100%;
 			
 		}
-
-		.carousel-item {
-			margin-left:1rem;
-			width:20vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
 		
-		.carousel-item2 {
-			margin-left:1rem;
-			width:50vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-
-		.carousel-item3 {
-			margin-left:1rem;
-			width:40vw;	
-			flex-shrink: 0;
-			display:flex;
-			flex-direction:column;
-			align-items:center;
-		}
-	
 	}
 
 /* GRID */
